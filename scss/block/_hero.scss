@@ -1,0 +1,135 @@
+.hero__wrapper {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    background-image: url('../img/hero_bg.svg');
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-color: #EEF1F8;
+    margin-bottom: 16px;
+}
+
+.hero__des {
+    text-align: center;
+    padding-right: 39px;
+    padding-left: 39px;
+}
+
+.hero__img_block {
+    text-align: center;
+}
+
+.hero__title {
+    font-weight: 800;
+    font-size: 48px;
+    color: var(--black);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+}
+
+.hero__text {
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--gray-strong);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero__btn_block {
+    display: flex;
+    gap: 16px;
+}
+
+.hero__button_block {
+    display: flex;
+    gap: 16px;
+} 
+
+.hero__btn {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--white);
+    border-radius: 3px;
+    background-color: var(--blue);
+    padding: 16px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.hero__button {
+    border-radius: 3px;
+    width: 51px;
+    height: 51px;
+    background-color: var(--blue);
+    background-image: url('../../img/hero_btn_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero_btn_block {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .hero__btn_block {
+        display: none;
+    }
+
+    .hero_btn_block {
+        display: flex;
+        gap: 16px;
+    }
+
+    .hero__des {
+        text-align: start;
+        padding: 0;
+        max-width: 300px;
+    }
+
+    .hero__wrapper {
+        text-align: start;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .hero__img {
+        width: 400px;
+    }
+
+    .hero__text {
+        margin-bottom: 30px;
+    }
+
+    .hero__title {
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .hero__wrapper {
+        padding: 53px 98px;
+    }
+
+    .hero__title {
+        font-size: 64px;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .hero__des {
+        max-width: 325px;
+    }
+
+    .hero__text {
+        margin-bottom: 51px;
+    }
+
+    .hero__img {
+        width: 500px;
+        height: 394px;
+    }
+}

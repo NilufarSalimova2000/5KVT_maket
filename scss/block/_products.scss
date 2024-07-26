@@ -1,0 +1,233 @@
+.products {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.products__btn_block {
+    display: none;
+}
+
+.products__title {
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--black);
+    text-align: center;
+}
+
+.products__title_block {
+    margin-bottom: 32px;
+}
+
+.products__item {
+    width: 172px;
+}
+
+.products__img_block {
+    border-radius: 3px;
+    background-color: var(--light-gray);
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 26px;
+    margin-bottom: 8px;
+}
+
+.products__sell {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--white);
+    border-radius: 0 3px 3px 0;
+    background-color: var(--red);
+    padding: 3px 10px;
+}
+
+.products__sell_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 8px;
+}
+
+.products__sub_title {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--gray-strong);
+    margin-bottom: 4px;
+}
+
+.products__des {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black);
+    margin-bottom: 43px;
+}
+
+.products__count {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.products__count2 {
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: line-through;
+    color: var(--gray);
+}
+
+.products__count_block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.products__button {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--white);
+    border-radius: 3px;
+    background-color: var(--blue);
+    padding: 16px 19px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.products__button2 {
+    border-radius: 3px;
+    width: 51px;
+    height: 51px;
+    background-color: var(--blue);
+    background-image: url('../img/product_btn_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.products__button_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 16px;
+}
+
+@media screen and (min-width:400px) {
+    .products__list {
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media screen and (min-width:586px) {
+    .products__item:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .products__list {
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .products__item:nth-child(4) {
+        display: block;
+    }
+
+    .products__btn_block {
+        display: flex;
+        gap: 10px;
+    }
+
+    .products__title_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:850px) {
+    .products__item {
+        width: 190px;
+    }
+
+    .products__title_block {
+        margin-bottom: 60px;
+    }
+
+    .products__button2 {
+        display: none;
+    }
+
+    .products__button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .products__button::before{
+        content: "";
+        background-image: url('../img/products_btn_icon2.svg');
+        background-repeat: no-repeat;
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+    .products__count2 {
+        display: none;
+    }
+
+    .products__count::after {
+        content: "";
+        background-image: url('../img/products_icon.svg');
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+    }
+
+    .products__count {
+        display: flex;
+        align-items: center;
+        gap: 85px;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .products {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .products__title_block {
+        margin-bottom: 70px;
+    }
+
+    .products__item {
+        width: 260px;
+    }
+
+    .products__list {
+        gap: 0;
+    }
+
+    .products__img {
+        width: 203px;
+        height: 203px;
+    }
+
+    .products__count {
+        gap: 150px;
+    }
+
+    .products__button::before{
+        margin-left: 50px;
+    }
+    
+}
